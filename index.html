@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>أساليب التقويم لمادة العلوم</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">🧪</div>
+      <div>
+        <h1>أساليب التقويم لمادة العلوم</h1>
+        <p class="sub">المرحلة الابتدائية (الصف الأول – السادس) | المنهج السعودي 1447</p>
+      </div>
+    </div>
+
+    <div class="top-actions">
+      <button id="btnHome" class="btn ghost">🏠 الصفحة الرئيسية</button>
+      <button id="btnReset" class="btn danger ghost" title="يمسح التعديلات المحفوظة لهذا المتصفح فقط">
+        🗑️ مسح الحفظ المحلي
+      </button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <aside class="sidebar">
+      <h2 class="side-title">الصفوف</h2>
+      <nav id="gradesNav" class="grades"></nav>
+
+      <div class="hint">
+        <p>✅ التشخيصي والتكويني: اضغطي <b>حفظ كـ PDF (A4)</b> ثم من نافذة الطباعة اختاري <b>Save as PDF</b>.</p>
+        <p>✅ الختامي: اختبار إلكتروني ذكي حسب موضوع الدرس + تغذية راجعة 😊✅🎯</p>
+        <p class="muted">💾 كل تعديل تحفظينه يبقى داخل نفس المتصفح.</p>
+      </div>
+    </aside>
+
+    <section class="content">
+      <div id="view"></div>
+    </section>
+  </main>
+
+  <!-- Print overlay -->
+  <div id="printOverlay" class="print-overlay hidden" aria-hidden="true">
+    <div class="print-sheet">
+      <div class="print-toolbar no-print">
+        <button id="btnPrintNow" class="btn">🖨️ طباعة / حفظ PDF (A4)</button>
+        <button id="btnClosePrint" class="btn ghost">إغلاق</button>
+      </div>
+      <div id="printArea" class="print-area"></div>
+    </div>
+  </div>
+
+  <script src="assets/curriculum-1447.js"></script>
+  <script src="assets/summative-generator.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
